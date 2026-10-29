@@ -1,0 +1,94 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1400&q=80') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.container {
+    max-width: 800px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 30px;
+    margin: 50px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    color: #007f5f;
+}
+
+h1, h2, p {
+    color: #007f5f;
+}
+
+input, select {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    color: white;
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0,127,95,0.4);
+}
+
+p, #destinationInfo {
+    font-weight: bold;
+    margin-top: 8px;
+    color: #007f5f;
+}
+
+#destinationInfo img,
+#factDisplay img,
+#festivalDisplay img,
+#tipDisplay img,
+#surpriseDisplay img {
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+#languageSelect {
+    margin-bottom: 15px;
+}
+
+#countdownDisplay {
+    font-size: 20px;
+    font-weight: bold;
+    color: #007f5f;
+}
+
+@media screen and (max-width: 900px) {
+    .container {
+        margin: 20px;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+}

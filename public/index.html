@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Smart Travel Planner</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <h1>Smart Travel Planner</h1>
+
+    <!-- Language Selector -->
+    <label for="languageSelect" data-lang="selectLanguage">Select Language:</label>
+    <select id="languageSelect">
+        <option value="en">English</option>
+        <option value="hi">Hindi</option>
+        <option value="ta">Tamil</option>
+        <option value="fr">French</option>
+    </select>
+
+    <!-- Budget Estimator -->
+    <h2 data-lang="budget">Budget Estimator</h2>
+    <label for="destinationSelect" data-lang="selectDestination">Select Destination:</label>
+    <select id="destinationSelect">
+      <option value="Paris">Paris</option>
+      <option value="London">London</option>
+      <option value="Tokyo">Tokyo</option>
+      <option value="Sydney">Sydney</option>
+      <option value="New York">New York</option>
+      <option value="Rome">Rome</option>
+      <option value="Dubai">Dubai</option>
+      <option value="Barcelona">Barcelona</option>
+      <option value="Singapore">Singapore</option>
+      <option value="Bangkok">Bangkok</option>
+      <option value="Istanbul">Istanbul</option>
+      <option value="Moscow">Moscow</option>
+      <option value="Cairo">Cairo</option>
+      <option value="Rio de Janeiro">Rio de Janeiro</option>
+      <option value="Cape Town">Cape Town</option>
+    </select>
+
+    <input type="number" id="travelers" placeholder="Number of travelers">
+    <input type="number" id="days" placeholder="Duration (days)">
+    <select id="transport">
+        <option value="bus">Bus</option>
+        <option value="train">Train</option>
+        <option value="flight">Flight</option>
+    </select>
+    <select id="hotel">
+        <option value="budget">Budget</option>
+        <option value="standard">Standard</option>
+        <option value="luxury">Luxury</option>
+    </select>
+    <button id="estimateBudget">Estimate Budget</button>
+    <p id="budgetResult"></p>
+    <div id="destinationInfo"></div>
+
+    <!-- Countdown Timer -->
+    <h2 data-lang="countdown">Countdown Timer</h2>
+    <input type="datetime-local" id="countdownInput">
+    <button id="startCountdown">Show Countdown</button>
+    <p id="countdownDisplay"></p>
+
+    <!-- Travel Quote -->
+    <h2 data-lang="quote">Travel Quote</h2>
+    <button id="showQuote">Show Random Quote</button>
+    <p id="quoteDisplay"></p>
+
+    <!-- Surprise Destination -->
+    <h2 data-lang="surprise">Surprise Destination</h2>
+    <button id="surpriseBtn">Pick a Surprise Destination</button>
+    <div id="surpriseDisplay"></div>
+
+</div>
+<script src="script.js"></script>
+</body>
+</html>

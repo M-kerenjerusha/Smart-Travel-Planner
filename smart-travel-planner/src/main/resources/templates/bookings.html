@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Bookings</title>
+</head>
+<body>
+<h1>Bookings</h1>
+<form action="/bookings/add" method="post">
+    User Name: <input type="text" name="userName" required>
+    Trip Destination: <input type="text" name="tripDestination" required>
+    <button type="submit">Add Booking</button>
+</form>
+<ul>
+    <li th:each="booking : ${bookings}" th:text="${booking.userName} + ' booked ' + ${booking.tripDestination}"></li>
+</ul>
+<a href="/users">Go to Users</a> | <a href="/trips">Go to Trips</a>
+</body>
+</html>
